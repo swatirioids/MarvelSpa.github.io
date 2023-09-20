@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Contact us || Marvel Spa</title>
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Gilda+Display&display=swap">
+    <link rel="stylesheet" href="css/plugins.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<style>
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .popup-content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .popup button {
+      padding: 10px 20px;
+      background-color:#c5812a;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader-bg"></div>
+    <div id="preloader">
+        <div id="preloader-status">
+            <div class="preloader-position loader"> <span></span> </div>
+        </div>
+    </div>
+    <!-- Progress scroll totop -->
+    <div class="progress-wrap cursor-pointer">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo-wrapper">
+                <a class="logo" href="index.html"><span style="color:#ffc107; font-size: 35px; font-family: Gilda Display';">Marvel Spa</span> </a>
+                <!-- <a class="logo" href="index.html"> <h2>THE CAPPA <span>Luxury Hotel</span></h2> </a> -->
+            </div>
+            <!-- Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><i class="ti-menu"></i></span> </button>
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"> <a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li><a href="tel:+917385072976"><button class="btn">Book Now</button></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header Banner -->
+    <div class="banner-header section-padding valign bg-img bg-fixed" data-overlay-dark="4" data-background="img/slider/bannerall.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 caption mt-90">
+                    <center><h5>Marvel Spa</h5></center>
+                    <center><h1>Contact us</h1></center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact -->
+    <section class="contact section-padding">
+        <div class="container">
+            <div class="row mb-90">
+                <div class="col-md-6 mb-60">
+                    <h3>Marvel Luxury Spa</h3>
+                    <p>We invite you to visit our spa and experience the ultimate relaxation firsthand. Our serene environment, expert therapists, and top-notch amenities await your arrival. Whether you're looking for a solo escape, a couples' retreat, or a group spa day, we have something special for everyone.</p>
+                    <div class="reservations mb-30">
+                        <div class="icon"><span class="flaticon-call"></span></div>
+                        <div class="text">
+                            <p>Book Now</p> <a href="tel:+917385072976">+917385072976</a>
+                        </div>
+                    </div>
+                    <div class="reservations mb-30">
+                        <div class="icon"><span class="flaticon-envelope"></span></div>
+                        <div class="text">
+                            <p>Email Info</p> <a href="mailto:marvelspapune@gmail.com">marvelspapune@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="reservations">
+                        <div class="icon"><span class="flaticon-location-pin"></span></div>
+                        <div class="text">
+                            <p>Address</p> Chopstick Hotel, 18 Gulmohar regency, <br>near Datta Mandir Chowk, Viman Nagar,<br> Pune, Maharashtra 411014
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 mb-30 offset-md-1" style="background-color:#fff; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                    <br>
+                    <br>
+                    <center><h2>Get in touch</h2></center>
+                        <form method="post" id="contact-form" class="contact__form">
+                            <!-- Input fields for name and email -->
+                              <input type="text" id="name" name="name" placeholder="Your Name  *" autocomplete="off" required>
+                            <br>
+                              <input type="email" id="email" name="email" placeholder="Your Email *" autocomplete="off" required>
+                            <br>
+                              <input name="phone" type="text" placeholder="Your Number *" required>
+                            <br>
+                            <center><button type="submit" class="butn-dark2">Submit</button></center>
+                        </form>
+                        <div id="success-popup" class="popup">
+                            <div class="popup-content">
+                            <p style="color: black;">Form submitted successfully!</p>
+                            <button id="close-popup">Close</button>
+                        </div>
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function() {
+                            const form = document.getElementById('contact-form');
+                            const successPopup = document.getElementById('success-popup');
+                            const closePopupButton = document.getElementById('close-popup')
+                            form.addEventListener('submit', function (event) {
+                            event.preventDefault();
+                            successPopup.style.display = 'flex';
+                            form.reset();
+                            });
+                            closePopupButton.addEventListener('click', function () {
+                            // Close the success popup
+                            successPopup.style.display = 'none';
+                        });
+                        });
+                        </script>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Map Section -->
+            <div class="row">
+                <div class="col-md-12 map animate-box" data-animate-effect="fadeInUp">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.1928459408127!2d73.91032951095534!3d18.565342567731893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1cdb0aa5393%3A0xf324c79d9b28aea8!2sMarvel%20Spa!5e0!3m2!1sen!2sin!4v1695206598442!5m2!1sen!2sin" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer-column footer-about">
+                            <h3 class="footer-title">About Marvel Spa</h3>
+                            <p class="footer-about-text" style="text-align: justify;">At Marvel Spa, we're committed to providing you with exceptional spa experiences and personalized wellness services. We look forward to assisting you and helping you achieve your relaxation and rejuvenation goals.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 offset-md-1">
+                        <div class="footer-column footer-explore clearfix">
+                            <h3 class="footer-title">Explore</h3>
+                            <ul class="footer-explore-list list-unstyled">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="gallery.html">Gallary</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-column footer-contact">
+                            <h3 class="footer-title">Contact</h3>
+                            <p class="footer-contact-text" style="text-align: justify;">Chopstick Hotel, 18 Gulmohar regency, near Datta Mandir Chowk, Viman Nagar, Pune, Maharashtra 411014</p>
+                            <div class="footer-contact-info">
+                                <p class="footer-contact-phone"><span class="flaticon-call"></span>+917385072976</p>
+                                <p class="footer-contact-mail"><a href="mailto:marvelspapune@gmail.com">marvelspapune@gmail.com</a></p>
+                            </div>
+                            <div class="footer-about-social-list">
+                                <a href="https://www.instagram.com/marvelspavimannager/" target="_blank"><i class="ti-instagram"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=61550966771485" target="_blank"><i class="ti-facebook"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-bottom-inner">
+                            <p class="footer-bottom-copy-right">© Copyright 2023 by <a href="www.marvelspa.com">RIOIDS</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.isotope.v3.0.2.js"></script>
+    <script src="js/pace.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/YouTubePopUp.js"></script>
+    <script src="js/select2.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
